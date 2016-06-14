@@ -15,6 +15,8 @@ for x in range(CircleProgress(sequence)):
     sleep(0.2)
 ```
 
+![juprog](juprog.gif)
+
 Install
 =======
 
