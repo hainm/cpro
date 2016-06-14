@@ -20,6 +20,12 @@ for x in range(CircleProgress(sequence)):
 Install
 =======
 
+Release
+-------
+```bash
+    pip install https://github.com/hainm/juprog/archive/v0.1.tar.gz
+```
+
 Development version
 -------------------
 
