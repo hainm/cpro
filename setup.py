@@ -4,7 +4,7 @@ from setuptools import setup
 import versioneer
 
 CLASSIFIERS = [
-    "Development Status :: 3 - Alpha",
+    "Development Status :: 3 - Beta",
     "Intended Audience :: Science/Research",
     "Intended Audience :: Developers",
     "License :: OSI Approved :: MIT License",
@@ -12,9 +12,6 @@ CLASSIFIERS = [
     "Programming Language :: Python",
     "Programming Language :: Python :: 2",
     "Programming Language :: Python :: 3",
-    "Topic :: Scientific/Engineering :: Bio-Informatics",
-    "Topic :: Scientific/Engineering :: Chemistry",
-    "Topic :: Scientific/Engineering :: Visualization",
     "Operating System :: Microsoft :: Windows",
     "Operating System :: POSIX",
     "Operating System :: Unix",
@@ -24,31 +21,20 @@ CLASSIFIERS = [
 
 if __name__ == '__main__':
     setup(
-        name="nglview",
-        author="Alexander S. Rose",
-        author_email="alexander.rose@weirdbyte.de",
-        description="IPython widget to interactively view molecular\
-                     structures and trajectories.",
+        name="juprog",
+        author="Hai Nguyen",
+        author_email="hainm.comp@gmail.com",
+        description="Circular process for Jupyter notebook",
         version=versioneer.get_version(),
         cmdclass=versioneer.get_cmdclass(),
         classifiers=CLASSIFIERS,
         license="MIT",
-        url="https://github.com/arose/nglview",
+        url="https://github.com/hainm/juprog",
         zip_safe=False,
         package_data={
-            "nglview.datafiles": ["*"],
-            "nglview.js": ["*"]
+            "juprog.progress-circle": ["*"],
         },
-        packages=["nglview", "nglview.datafiles", "nglview.js"],
-        install_requires=["jupyter", "traitlets>=4.2.1", "ipywidgets<5.0"],
+        packages=["juprog"],
         tests_require=["nose"],
         test_suite="nose.collector",
-        extras_require={
-            "simpletraj": ["simpletraj"],
-            "mdtraj": ["mdtraj"],
-            "pytraj": ["pytraj"],
-            "MDAnalysis": ["MDAnalysis"],
-            "ParmEd": ["parmed"],
-            "rdkit": ["rdkit"],
-        }
     )

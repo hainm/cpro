@@ -1,7 +1,7 @@
-include cpro/html/*
+include juprog/html/*
 include LICENSE README.md
 include setup.py
-include cpro/*py
-include cpro/progress-circle/*
-include cpro/progress-circle/*/*
+include juprog/*py
+include juprog/progress-circle/*
+include juprog/progress-circle/*/*
 global-exclude *.pycinclude *.ipynb *.gif *tests/notebooks/*
