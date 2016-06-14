@@ -13,6 +13,7 @@ from juprog import CircleProgress
 for x in range(CircleProgress(sequence)):
     # fake long process
     sleep(0.2)
+```
 
 Acknowledgement
 ===============
