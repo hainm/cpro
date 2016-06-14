@@ -38,6 +38,28 @@ $("#%s").progressCircle({
 
 
 class CircleProgress(object):
+    """
+
+    Parameters
+    ----------
+    every : int
+    size : sequence size
+        if None, use len(sequence)
+
+    Examples
+    --------
+    >>> from juprog import CircleProgress
+    >>> from time import sleep
+    >>> for x in CircleProgress(sequence=range(10), every=2):
+    ...     sleep(0.2)
+    <IPython.core.display.HTML object>
+    <IPython.core.display.Javascript object>
+    <IPython.core.display.Javascript object>
+    <IPython.core.display.Javascript object>
+    <IPython.core.display.Javascript object>
+    <IPython.core.display.Javascript object>
+    <IPython.core.display.Javascript object>
+    """
     def __init__(self, sequence, every=1, size=None):
         self.sequence = sequence
         self.every = every

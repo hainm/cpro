@@ -1,4 +1,4 @@
-from cpro import CircleProgress
+from juprog import CircleProgress
 from time import sleep
 
 def test():
