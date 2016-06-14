@@ -15,6 +15,16 @@ for x in range(CircleProgress(sequence)):
     sleep(0.2)
 ```
 
+Install
+=======
+
+Development version
+-------------------
+
+```bash
+    pip install git+https://github.com/hainm/juprog
+```
+
 Acknowledgement
 ===============
 Use [progress-circle](https://github.com/iammary/progress-circle) for displaying progress. 
