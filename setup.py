@@ -4,7 +4,7 @@ from setuptools import setup
 import versioneer
 
 CLASSIFIERS = [
-    "Development Status :: 3 - Beta",
+    "Development Status :: 5 - Production/Stable",
     "Intended Audience :: Science/Research",
     "Intended Audience :: Developers",
     "License :: OSI Approved :: MIT License",
