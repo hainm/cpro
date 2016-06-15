@@ -10,6 +10,7 @@ Basic Example
 from time import sleep
 from juprog import CircleProgress
 
+sequence = range(10)
 for x in CircleProgress(sequence):
     # fake long process
     sleep(0.2)
