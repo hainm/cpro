@@ -72,9 +72,9 @@ class CircleProgress(object):
                 raise TypeError('can not determine lenth, please provide size')
 
     def init_display(self, circle):
-        fn = os.path.dirname(__file__) + '/progress-circle/css/circle.css'
+        fn = os.path.dirname(__file__) + '/html/css/circle.css'
         style = "<style>\n" + open(fn).read() + "</style>" 
-        fn2 = os.path.dirname(__file__) + '/progress-circle/progress-circle.js'
+        fn2 = os.path.dirname(__file__) + '/html/progress-circle.js'
         js = open(fn2).read()
         display(HTML(style + circle_html % (js, circle, circle)))
     

@@ -32,9 +32,10 @@ if __name__ == '__main__':
         url="https://github.com/hainm/juprog",
         zip_safe=False,
         package_data={
-            "juprog.progress-circle": ["*"],
+            "juprog.html": ["*"],
+            "juprog.html.css": ["*"],
         },
-        packages=["juprog"],
+        packages=["juprog", "juprog.html", "juprog.html.css"],
         tests_require=["nose"],
         test_suite="nose.collector",
     )
