@@ -24,7 +24,7 @@ Install
 Release
 -------
 ```bash
-    pip install https://github.com/hainm/juprog/archive/v0.1.tar.gz
+    pip install juprog
 ```
 
 Development version
